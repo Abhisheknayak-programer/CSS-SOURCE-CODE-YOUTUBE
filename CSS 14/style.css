@@ -1,0 +1,14 @@
+section{
+    border: 10px solid red;
+}
+
+div{
+    border: 10px solid black;
+}
+.all_holder{
+    width: 50%;
+    margin: auto;
+    padding-left: 100px;
+    margin: 10px auto;
+    margin: 10px auto 200px auto;
+}
