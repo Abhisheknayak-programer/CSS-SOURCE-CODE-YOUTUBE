@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Metal Mania', cursive; */
+}
+
+.firstHead{
+    text-align: center;
+    background: rgb(3, 1, 27);
+    font-size: 8rem;
+    color: white;
+}
+
+.FirstSection{
+    background: rgb(3, 1, 27);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.usedUsingMedia{
+    display: flex;
+}
+.box{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FirstSection .box h1{
+    color: white;
+    font-size: 16rem;
+}
+
+.mydiv1{
+    height: 200px;
+    width: 200px;
+    border: 10px solid white;
+    border-radius: 50%;
+    animation: animate1 5s linear infinite;
+}
+
+.mydiv2{
+    height: 180px;
+    width: 180px;
+    border: 20px solid red;
+    border-radius: 50%;
+    background-image: linear-gradient( 89.2deg,  rgba(0,0,0,1) 10.4%, rgba(255,0,0,1) 37.1%, rgba(255,216,51,1) 64.3%, rgba(255,255,255,1) 90.5% );    animation: animate2 5s linear infinite;
+}
+
+.mydiv3{
+    height: 140px;
+    width: 140px;
+    border: 30px solid white;
+    background-color: radial-gradient( circle farthest-corner at 50.4% 50.5%,  rgba(251,32,86,1) 0%, rgba(135,2,35,1) 90% );
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        transform: rotate(0deg);
+        filter: hue-rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        transform: scale(1.2);
+    }
+}
+
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+        filter: hue-rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        transform: scale(0.1);
+    }
+}
+
+
+
+/* Mobile Responsive */
+
+@media only screen and (max-width:578px){
+    html{
+        font-size: 62%;
+    }
+    .firstHead{
+        transform: skew(5deg);
+    }
+    .FirstSection{
+        flex-direction: column;
+    }
+    .FirstSection .box h1{
+        font-size: 4rem;
+    }
+    .FirstSection .box{
+        height: 100px;
+        width: 100px;
+    }
+    .mydiv1{
+        height: 40px;
+        width: 40px;
+        border: 10px solid crimson;
+        background-color: aliceblue;
+    }
+    .mydiv2{
+        display: none;
+    }
+    .mydiv3{
+        display: none;
+    }
+}
